@@ -2,9 +2,9 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion "23.0.2"
     defaultConfig {
-        applicationId "com.android.pro"
+        applicationId "com.pro.android"
         minSdkVersion 19
         targetSdkVersion 25
         versionCode 1
@@ -25,6 +25,5 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.0.0'
-    compile 'com.android.support:design:25.0.0'
     testCompile 'junit:junit:4.12'
 }
