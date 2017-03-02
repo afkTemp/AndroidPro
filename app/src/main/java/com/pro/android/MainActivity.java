@@ -11,6 +11,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toast.makeText(MainActivity.this, "进行提示: " + System.currentTimeMillis(), Toast.LENGTH_LONG).show();
+        // --
+        StringBuilder sBuilder = new StringBuilder();
+        sBuilder.append("进行提示：");
+        sBuilder.append(System.currentTimeMillis());
+
+        Toast.makeText(MainActivity.this, sBuilder.toString(), Toast.LENGTH_LONG).show();
     }
 }
